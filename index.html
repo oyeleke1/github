@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Quiz — JavaScript practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="brand">little<span>quiz.</span></div><span class="badge">A little practice, every day</span></header>
+  <main>
+    <p class="eyebrow">The JavaScript edition</p>
+    <h1>Small questions.<br>Big aha moments.</h1>
+    <p class="intro">Take a breath, test what you know, and learn something along the way.</p>
+    <section class="card" id="quiz-panel" aria-labelledby="question">
+      <div class="meta"><span id="progress-text">Question 1 of 5</span><span>No timer. No pressure.</span></div>
+      <progress id="progress" value="1" max="5" aria-label="Question progress"></progress>
+      <h2 id="question" tabindex="-1">Which keyword declares a value you will not reassign?</h2>
+      <div id="answers" class="answers" role="group" aria-labelledby="question">
+        <button class="answer" type="button">const</button>
+        <button class="answer" type="button">let</button>
+        <button class="answer" type="button">return</button>
+      </div>
+      <p id="feedback" role="status" aria-live="polite"></p>
+      <button class="primary" id="next-button" type="button" disabled>Next question →</button>
+    </section>
+    <section class="card" id="result-panel" aria-labelledby="result-heading" hidden>
+      <div class="result-icon" aria-hidden="true">✦</div>
+      <p class="eyebrow">Practice complete</p>
+      <h2 id="result-heading" tabindex="-1">Look at you, learning.</h2>
+      <p id="result-text"></p>
+      <p> this is not here</p>
+      <p class="intro">Every attempt is a step forward. Ready for another round?</p>
+      <button class="primary" id="restart-button" type="button">Try again ↻</button>
+    </section>
+    <footer>Made for curious minds · 5 questions · Works offline</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
